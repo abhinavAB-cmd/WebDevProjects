@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club Registration</title>
+    <link rel="stylesheet" href="clubEvent.css">
+    <link rel="icon" href="./icon.png">
+</head>
+<body>
+    
+    <header class="hero">
+        <h1 class="heading">Coding Club</h1>
+        <em class="quote">Explore, Learn and Build Together!</em>
+    </header>
+    <br>
+    
+    <div class="blockBg">
+        <h2 class="upcomingEvent">Club Events</h2>
+        <table class="table">
+            <tr>
+                <th>Event Name</th>
+                <th>Event Date</th>
+                <th>Location</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Web Development Workshop</td>
+                <td>15 Nov</td>
+                <td>Computer Lab 2</td>
+            </tr>
+            <tr>
+                <td>Code Challenge</td>
+                <td>25 Nov</td>
+                <td>Seminar Hall</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Upcoming Events: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <br>
+    
+    <div class="blockBg">
+        <h2 class="upcomingEvent">Join Our Coding Club</h2>
+    <form action="submit" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Birth Date:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="Gender">Select Gender:</label>
+
+        <input type="radio" id="tickBox" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="tickBox" name="gender" value="female" required>
+        <label for="female">Female</label>
+
+        <input type="radio" id="tickBox" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="interest">Areas of Interest:</label>
+        <input type="checkbox" id="tickBox" name="interests" value="DSA">
+        <label for="DSA">Data Structures</label>
+        <input type="checkbox" id="tickBox" name="interests" value="Web">
+        <label for="Web">Web Development</label><br><br>
+
+        <label for="branch">Choose Branch:</label>
+        <select id="branch" name="branch" required>
+            <option value="" selected disabled>Select Your Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="BCA">BCA</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="BBA">BBA</option>
+        </select><br><br>
+
+        <label for="description">Tell us why you wish to join:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Submit Registration</button><br><br>
+        
+    </form>    
+    </div>
+</body>
+</html>

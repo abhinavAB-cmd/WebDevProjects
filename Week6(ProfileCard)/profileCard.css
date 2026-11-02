@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f1;
+    min-height: 100vh;
+}
+
+header {
+    height: 46px;
+    background: #781d32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.profile-card {
+    width: 280px;
+    height: 316px;
+    margin: 24px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #c83250;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #c83250;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+}
+
+h2 {
+    margin: 0 0 18px;
+    font-size: 23px;
+}
+
+.role {
+    margin: 0 0 16px;
+    font-size: 16px;
+}
+
+.bio {
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #e8bdc5;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+.add-button {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background: #e64b65;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

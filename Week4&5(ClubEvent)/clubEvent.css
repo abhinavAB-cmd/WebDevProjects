@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    background-color: #eaf2f8;
+    color: #1c2e40;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero {
+    background-color: #234e70;
+    color: #ffffff;
+    text-align: center;
+    padding: 55px 20px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.heading {
+    font-size: 64px;
+    margin: 15px 0;
+}
+
+.quote {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.blockBg {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+}
+
+.upcomingEvent {
+    font-size: 38px;
+    margin: 10px 0 20px;
+    color: #1c2e40;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.table th {
+    background-color: #234e70;
+    color: #ffffff;
+    text-align: left;
+    padding: 18px;
+    font-size: 24px;
+}
+
+.table td {
+    padding: 18px;
+    border-bottom: 2px solid #d5e2ed;
+}
+
+.table tbody tr:hover {
+    background-color: #edf5fb;
+}
+
+.table tfoot td {
+    color: #234e70;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+form {
+    max-width: 600px;
+    margin-left: 0;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+}
+
+#tickBox {
+    width: 20px;
+    height: 20px;
+}
+
+#branch {
+    width: 250px;
+    height: 30px;
+}
+
+button {
+    background-color: #234e70;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 30px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16364f;
+}
+
+.footer {
+    text-align: center;
+    padding: 12px;
+    color: #234e70;
+    font-size: 16px;
+}

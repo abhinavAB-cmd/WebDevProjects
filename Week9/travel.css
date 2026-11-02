@@ -1,0 +1,203 @@
+/* ---------- Base (mobile first) ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #1c2b29;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  background: #fdf1dc;
+  color: #12332f;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* ---------- Navbar (Flexbox) ---------- */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #12332f;
+  color: white;
+  padding: 1rem;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.6rem;
+  font-size: 1rem;
+}
+
+/* ---------- Hero (Grid) ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  background: #0f766e;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.hero p {
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* ---------- Features (Grid) ---------- */
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.feature {
+  background: #fdf1dc;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.feature h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.25rem;
+}
+
+.feature p {
+  margin: 0;
+}
+
+/* ---------- Call to action ---------- */
+.cta {
+  background: #12332f;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.cta h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.cta p {
+  margin: 0 0 1.25rem;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #0b2220;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Tablet: 768px and up ---------- */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links a {
+    margin: 0 0 0 1.25rem;
+  }
+
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+  }
+
+  .hero img {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* ---------- Laptop: 1024px and up ---------- */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1.25rem 4rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+    padding: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+
+  .hero img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 3rem 4rem;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+}
